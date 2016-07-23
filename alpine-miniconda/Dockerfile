@@ -42,9 +42,9 @@ ENV LANGUAGE en_US.UTF-8
 
 # Configure Miniconda
 ENV MINICONDA_VER 4.0.5
-ENV MINICONDA Miniconda3-$MINICONDA_VER-Linux-x86_64.sh
+ENV MINICONDA Miniconda2-$MINICONDA_VER-Linux-x86_64.sh
 ENV MINICONDA_URL https://repo.continuum.io/miniconda/$MINICONDA
-ENV MINICONDA_SUM e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+ENV MINICONDA_SUM ada5b7942e519829bc5e8e638d525e009676a7a598cf3dd80f041f6d5e39ddbb
 
 # Create jovyan user with UID=1000 and in the 'users' group
 RUN adduser -s /bin/bash -u $NB_UID -D $NB_USER && \
